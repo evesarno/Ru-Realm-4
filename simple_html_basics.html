@@ -1,0 +1,404 @@
+<!DOCTYPE html> <!-- Document type declaration for HTML5 -->
+<html lang="en"> <!-- Root HTML element with language attribute -->
+<head> <!-- Head section contains metadata and resources -->
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport meta tag for responsive design -->
+    <title>Simple HTML & CSS Basics Reference</title> <!-- Title that appears in browser tab -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body> <!-- Body element contains visible content -->
+    <div class="container"> <!-- Main container div -->
+        
+        <!-- Semantic HTML5 Elements -->
+        <header> <!-- Header section -->
+            <h1>Simple HTML & CSS Basics Reference</h1> <!-- Main page heading -->
+            <p>A Simple guide covering all fundamental HTML elements and CSS styling</p> <!-- Header subtitle -->
+        </header>
+
+        <nav> <!-- Navigation section -->
+            <ul> <!-- Unordered list for navigation -->
+                <li><a href="#headings">Headings</a></li> <!-- Navigation link -->
+                <li><a href="#text">Text</a></li> <!-- Navigation link -->
+                <li><a href="#lists">Lists</a></li> <!-- Navigation link -->
+                <li><a href="#tables">Tables</a></li> <!-- Navigation link -->
+                <li><a href="#forms">Forms</a></li> <!-- Navigation link -->
+                <li><a href="#media">Media</a></li> <!-- Navigation link -->
+            </ul>
+        </nav>
+
+        <main> <!-- Main content area -->
+            
+            <!-- Headings Section -->
+            <section id="headings"> <!-- Section with ID for navigation -->
+                <h2>HTML Headings (h1-h6)</h2> <!-- Section heading -->
+                <h1>This is an H1 heading</h1> <!-- Level 1 heading -->
+                <h2>This is an H2 heading</h2> <!-- Level 2 heading -->
+                <h3>This is an H3 heading</h3> <!-- Level 3 heading -->
+                <h4>This is an H4 heading</h4> <!-- Level 4 heading -->
+                <h5>This is an H5 heading</h5> <!-- Level 5 heading -->
+                <h6>This is an H6 heading</h6> <!-- Level 6 heading -->
+            </section>
+
+            <!-- Text Formatting Section -->
+            <section id="text"> <!-- Text formatting section -->
+                <h2>Text Formatting Elements</h2> <!-- Section heading -->
+                
+                <article> <!-- Article element for text content -->
+                    <h3>Basic Text Formatting</h3> <!-- Subsection heading -->
+                    <p>This is a regular paragraph with <strong>bold text using strong</strong> and <b>bold text using b tag</b>.</p> <!-- Paragraph with bold text -->
+                    <p>Here we have <em>emphasized text using em</em> and <i>italic text using i tag</i>.</p> <!-- Paragraph with italic text -->
+                    <p>This text has <u>underlined content</u> and <mark>highlighted text</mark>.</p> <!-- Paragraph with underline and highlight -->
+                    <p>We can show <small>small text</small> and <del>deleted text</del> with <ins>inserted text</ins>.</p> <!-- Various text modifications -->
+                    <p>For code, we use <code>inline code</code> or blocks:</p> <!-- Inline code example -->
+                    
+                    <pre><code>// This is a code block
+function hello() {
+    console.log("Hello World!");
+}</code></pre> <!-- Preformatted code block -->
+                    
+                    <p>Subscript: H<sub>2</sub>O, Superscript: E=mc<sup>2</sup></p> <!-- Subscript and superscript examples -->
+                    
+                    <blockquote> <!-- Blockquote element -->
+                        <p>"This is a blockquote. It's used for longer quotations and is typically indented."</p> <!-- Quote content -->
+                        <cite>- Quote Author</cite> <!-- Citation for quote -->
+                    </blockquote>
+                </article>
+
+                <aside> <!-- Aside element for additional info -->
+                    <h4>Additional Text Elements</h4> <!-- Aside heading -->
+                    <p><abbr title="HyperText Markup Language">HTML</abbr> stands for HyperText Markup Language.</p> <!-- Abbreviation with title -->
+                    <p>The <dfn>definition element</dfn> is used to define terms.</p> <!-- Definition element -->
+                    <p>Use <kbd>Ctrl+C</kbd> to copy text.</p> <!-- Keyboard input element -->
+                    <p><samp>This is sample output from a computer program.</samp></p> <!-- Sample output element -->
+                    <p><var>x</var> = <var>y</var> + 2 (mathematical variables)</p> <!-- Variable element -->
+                </aside>
+            </section>
+
+            <!-- Links Section -->
+            <section> <!-- Links section -->
+                <h2>Links and Navigation</h2> <!-- Section heading -->
+                <p>Here are different types of links:</p> <!-- Introduction paragraph -->
+                <ul> <!-- Unordered list of links -->
+                    <li><a href="https://tamizdatproject.org">External link to example.com</a></li> <!-- External link -->
+                    <li><a href="#headings">Internal link to headings section</a></li> <!-- Internal page link -->
+                    <li><a href="mailto:someone@example.com">Email link</a></li> <!-- Email link -->
+                    <li><a href="tel:+1234567890">Phone link</a></li> <!-- Phone link -->
+                    <li><a href="#" download>Download link</a></li> <!-- Download link -->
+                    <li><a href="https://tamizdatproject.org" target="_blank">Link opening in new tab</a></li> <!-- New tab link -->
+                </ul>
+            </section>
+
+            <!-- Lists Section -->
+            <section id="lists"> <!-- Lists section -->
+                <h2>Lists (Ordered, Unordered, Description)</h2> <!-- Section heading -->
+                
+                <h3>Unordered List</h3> <!-- Subsection heading -->
+                <ul> <!-- Unordered list -->
+                    <li>First item</li> <!-- List item -->
+                    <li>Second item</li> <!-- List item -->
+                    <li>Third item with nested list: <!-- List item with nested list -->
+                        <ul> <!-- Nested unordered list -->
+                            <li>Nested item 1</li> <!-- Nested list item -->
+                            <li>Nested item 2</li> <!-- Nested list item -->
+                        </ul>
+                    </li>
+                    <li>Fourth item</li> <!-- List item -->
+                </ul>
+
+                <h3>Ordered List</h3> <!-- Subsection heading -->
+                <ol> <!-- Ordered list -->
+                    <li>First step</li> <!-- List item -->
+                    <li>Second step</li> <!-- List item -->
+                    <li>Third step with sub-steps: <!-- List item with nested list -->
+                        <ol type="a"> <!-- Nested ordered list with letter numbering -->
+                            <li>Sub-step A</li> <!-- Nested list item -->
+                            <li>Sub-step B</li> <!-- Nested list item -->
+                        </ol>
+                    </li>
+                    <li>Fourth step</li> <!-- List item -->
+                </ol>
+
+                <h3>Custom Styled List</h3> <!-- Subsection heading -->
+                <ul class="custom-list"> <!-- Custom styled unordered list -->
+                    <li>Custom bullet point 1</li> <!-- Custom list item -->
+                    <li>Custom bullet point 2</li> <!-- Custom list item -->
+                    <li>Custom bullet point 3</li> <!-- Custom list item -->
+                </ul>
+
+                <h3>Description List</h3> <!-- Subsection heading -->
+                <dl> <!-- Description list -->
+                    <dt>HTML</dt> <!-- Description term -->
+                    <dd>HyperText Markup Language - the standard markup language for web pages</dd> <!-- Description definition -->
+                    <dt>CSS</dt> <!-- Description term -->
+                    <dd>Cascading Style Sheets - used for styling HTML elements</dd> <!-- Description definition -->
+                    <dt>JavaScript</dt> <!-- Description term -->
+                    <dd>Programming language for adding interactivity to web pages</dd> <!-- Description definition -->
+                </dl>
+            </section>
+
+            <!-- Tables Section -->
+            <section id="tables"> <!-- Tables section -->
+                <h2>Tables</h2> <!-- Section heading -->
+                
+                <h3>Basic Table</h3> <!-- Subsection heading -->
+                <table> <!-- Table element -->
+                    <thead> <!-- Table header group -->
+                        <tr> <!-- Table row -->
+                            <th>Name</th> <!-- Table header cell -->
+                            <th>Age</th> <!-- Table header cell -->
+                            <th>City</th> <!-- Table header cell -->
+                            <th>Occupation</th> <!-- Table header cell -->
+                        </tr>
+                    </thead>
+                    <tbody> <!-- Table body group -->
+                        <tr> <!-- Table row -->
+                            <td>John Doe</td> <!-- Table data cell -->
+                            <td>28</td> <!-- Table data cell -->
+                            <td>New York</td> <!-- Table data cell -->
+                            <td>Developer</td> <!-- Table data cell -->
+                        </tr>
+                        <tr> <!-- Table row -->
+                            <td>Jane Smith</td> <!-- Table data cell -->
+                            <td>32</td> <!-- Table data cell -->
+                            <td>London</td> <!-- Table data cell -->
+                            <td>Designer</td> <!-- Table data cell -->
+                        </tr>
+                        <tr> <!-- Table row -->
+                            <td>Mike Johnson</td> <!-- Table data cell -->
+                            <td>25</td> <!-- Table data cell -->
+                            <td>Toronto</td> <!-- Table data cell -->
+                            <td>Manager</td> <!-- Table data cell -->
+                        </tr>
+                    </tbody>
+                    <tfoot> <!-- Table footer group -->
+                        <tr> <!-- Table row -->
+                            <td colspan="4">Total: 3 employees</td> <!-- Table data cell spanning 4 columns -->
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <h3>Complex Table with Spanning</h3> <!-- Subsection heading -->
+                <table> <!-- Table element -->
+                    <caption>Monthly Sales Report</caption> <!-- Table caption -->
+                    <thead> <!-- Table header group -->
+                        <tr> <!-- Table row -->
+                            <th rowspan="2">Product</th> <!-- Header cell spanning 2 rows -->
+                            <th colspan="3">Quarter 1</th> <!-- Header cell spanning 3 columns -->
+                            <th rowspan="2">Total</th> <!-- Header cell spanning 2 rows -->
+                        </tr>
+                        <tr> <!-- Table row -->
+                            <th>Jan</th> <!-- Table header cell -->
+                            <th>Feb</th> <!-- Table header cell -->
+                            <th>Mar</th> <!-- Table header cell -->
+                        </tr>
+                    </thead>
+                    <tbody> <!-- Table body group -->
+                        <tr> <!-- Table row -->
+                            <td>Laptops</td> <!-- Table data cell -->
+                            <td>50</td> <!-- Table data cell -->
+                            <td>65</td> <!-- Table data cell -->
+                            <td>70</td> <!-- Table data cell -->
+                            <td>185</td> <!-- Table data cell -->
+                        </tr>
+                        <tr> <!-- Table row -->
+                            <td>Phones</td> <!-- Table data cell -->
+                            <td>120</td> <!-- Table data cell -->
+                            <td>110</td> <!-- Table data cell -->
+                            <td>130</td> <!-- Table data cell -->
+                            <td>360</td> <!-- Table data cell -->
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Media Section -->
+            <section id="media" class="media-section"> <!-- Media section with custom class -->
+                <h2>Media Elements</h2> <!-- Section heading -->
+                
+                <h3>Images</h3> <!-- Subsection heading -->
+                <div class="img-container"> <!-- Image container div -->
+                    <img src="tamizdat_graph.png" 
+                         alt="Sample placeholder image" 
+                         class="responsive-img"
+                         title="This is a sample image"> <!-- Image with src, alt, class, and title attributes -->
+                </div>
+                
+                <h3>Video</h3> <!-- Subsection heading -->
+                <video controls poster="https://via.placeholder.com/600x300/e74c3c/ffffff?text=Video+Poster"> <!-- Video element with controls and poster -->
+                    <source src="video.mp4" type="video/mp4"> <!-- Video source -->
+                    Your browser does not support the video tag. <!-- Fallback text -->
+                </video>
+                
+                <h3>Audio</h3> <!-- Subsection heading -->
+                <audio controls> <!-- Audio element with controls -->
+                    <source src="sample-audio.mp3" type="audio/mpeg"> <!-- Audio source -->
+                    Your browser does not support the audio element. <!-- Fallback text -->
+                </audio>
+                
+                <h3>Embedded Content</h3> <!-- Subsection heading -->
+                    <iframe width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/jIvNLrOwP9E" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allowfullscreen>
+                    </iframe>
+            </section>
+
+            <!-- Semantic HTML5 Elements -->
+            <section> <!-- Semantic elements section -->
+                <h2>HTML5 Semantic Elements</h2> <!-- Section heading -->
+                <p>This page demonstrates various HTML5 semantic elements:</p> <!-- Introduction paragraph -->
+                <ul> <!-- List of semantic elements -->
+                    <li><code>&lt;header&gt;</code> - Used for page/section headers</li> <!-- Header description -->
+                    <li><code>&lt;nav&gt;</code> - Navigation links container</li> <!-- Nav description -->
+                    <li><code>&lt;main&gt;</code> - Main content area</li> <!-- Main description -->
+                    <li><code>&lt;section&gt;</code> - Thematic grouping of content</li> <!-- Section description -->
+                    <li><code>&lt;article&gt;</code> - Self-contained content</li> <!-- Article description -->
+                    <li><code>&lt;aside&gt;</code> - Sidebar or tangential content</li> <!-- Aside description -->
+                    <li><code>&lt;footer&gt;</code> - Page/section footer</li> <!-- Footer description -->
+                    <li><code>&lt;figure&gt;</code> - Media with caption</li> <!-- Figure description -->
+                    <li><code>&lt;figcaption&gt;</code> - Caption for figure</li> <!-- Figcaption description -->
+                </ul>
+                
+                <figure> <!-- Figure element for media with caption -->
+                    <img src="tamizdat_graph.png" 
+                         alt="Example figure image" 
+                         class="responsive-img"> <!-- Image inside figure -->
+                    <figcaption>This is a figure caption explaining the image above.</figcaption> <!-- Figure caption -->
+                </figure>
+            </section>
+
+            <!-- HTML Entities and Special Characters -->
+            <section> <!-- Special characters section -->
+                <h2>HTML Entities &amp; Special Characters</h2> <!-- Section heading with HTML entity -->
+                <p>HTML entities are used to display special characters:</p> <!-- Introduction paragraph -->
+                <ul> <!-- List of HTML entities -->
+                    <li>&amp;lt; produces &lt; (less than)</li> <!-- Less than entity -->
+                    <li>&amp;gt; produces &gt; (greater than)</li> <!-- Greater than entity -->
+                    <li>&amp;amp; produces &amp; (ampersand)</li> <!-- Ampersand entity -->
+                    <li>&amp;quot; produces &quot; (quotation mark)</li> <!-- Quote entity -->
+                    <li>&amp;apos; produces &apos; (apostrophe)</li> <!-- Apostrophe entity -->
+                    <li>&amp;nbsp; produces a non-breaking space</li> <!-- Non-breaking space entity -->
+                    <li>&amp;copy; produces &copy; (copyright)</li> <!-- Copyright entity -->
+                    <li>&amp;reg; produces &reg; (registered trademark)</li> <!-- Registered trademark entity -->
+                    <li>&amp;trade; produces &trade; (trademark)</li> <!-- Trademark entity -->
+                    <li>&amp;euro; produces &euro; (euro symbol)</li> <!-- Euro entity -->
+                    <li>&amp;pound; produces &pound; (pound symbol)</li> <!-- Pound entity -->
+                    <li>&amp;yen; produces &yen; (yen symbol)</li> <!-- Yen entity -->
+                </ul>
+            </section>
+
+            <!-- Div and Span Elements -->
+            <section> <!-- Generic containers section -->
+                <h2>Generic Containers: Div &amp; Span</h2> <!-- Section heading -->
+                <div style="background-color: #ecf0f1; padding: 15px; border-radius: 5px; margin: 15px 0;"> <!-- Div with inline styles -->
+                    <p>This paragraph is inside a <code>&lt;div&gt;</code> element. <!-- Paragraph explaining div -->
+                    Divs are block-level elements used for grouping and styling. <!-- Continuation of explanation -->
+                    They take up the full width available and start on a new line.</p> <!-- More div explanation -->
+                    
+                    <p>You can have <span style="background-color: #f39c12; padding: 2px 5px; border-radius: 3px;">highlighted text using span</span> <!-- Span with inline styles -->
+                    which is an inline element that doesn't break the flow of text.</p> <!-- Span explanation -->
+                </div>
+            </section>
+
+            <!-- Meta Elements and Document Structure -->
+            <section> <!-- Meta elements section -->
+                <h2>Document Structure &amp; Meta Elements</h2> <!-- Section heading -->
+                <p>This document includes various meta elements in the <code>&lt;head&gt;</code> section:</p> <!-- Introduction -->
+                <ul> <!-- List of meta elements -->
+                    <li><code>&lt;!DOCTYPE html&gt;</code> - HTML5 document type declaration</li> <!-- DOCTYPE description -->
+                    <li><code>&lt;html lang="en"&gt;</code> - Root element with language attribute</li> <!-- HTML element description -->
+                    <li><code>&lt;meta charset="UTF-8"&gt;</code> - Character encoding</li> <!-- Charset description -->
+                    <li><code>&lt;meta name="viewport"&gt;</code> - Responsive design viewport</li> <!-- Viewport description -->
+                    <li><code>&lt;title&gt;</code> - Page title shown in browser tab</li> <!-- Title description -->
+                    <li><code>&lt;style&gt;</code> - Embedded CSS styles</li> <!-- Style description -->
+                </ul>
+            </section>
+
+            <!-- Accessibility Features -->
+            <section> <!-- Accessibility section -->
+                <h2>Accessibility Features</h2> <!-- Section heading -->
+                <p>This document demonstrates various accessibility features:</p> <!-- Introduction -->
+                <ul> <!-- List of accessibility features -->
+                    <li><code>alt</code> attributes on images for screen readers</li> <!-- Alt attribute description -->
+                    <li><code>label</code> elements properly associated with form inputs</li> <!-- Labels description -->
+                    <li><code>title</code> attributes for additional context</li> <!-- Title attribute description -->
+                    <li>Semantic HTML elements for better structure</li> <!-- Semantic elements description -->
+                    <li>Proper heading hierarchy (h1-h6)</li> <!-- Heading hierarchy description -->
+                    <li>Sufficient color contrast for readability</li> <!-- Color contrast description -->
+                    <li><code>lang</code> attribute on html element</li> <!-- Language attribute description -->
+                </ul>
+                
+                <div role="alert" style="background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724; padding: 15px; border-radius: 5px; margin: 15px 0;"> <!-- ARIA alert role -->
+                    <strong>Accessibility Note:</strong> This is an example of an ARIA alert role for important messages. <!-- Alert content -->
+                </div>
+            </section>
+
+            <!-- Comments and Code Examples -->
+            <section> <!-- Comments section -->
+                <h2>HTML Comments</h2> <!-- Section heading -->
+                <p>HTML comments are not displayed in the browser but are visible in the source code:</p> <!-- Introduction -->
+                <!-- This is an HTML comment - it won't be displayed on the page -->
+                <p>Check the source code of this page to see various HTML comments throughout the document.</p> <!-- Comment explanation -->
+                
+                <pre><code>&lt;!-- This is how you write an HTML comment --&gt;
+&lt;!-- Comments can span
+     multiple lines
+     like this --&gt;</code></pre> <!-- Code example of comments -->
+            </section>
+
+        </main> <!-- End of main content area -->
+
+        <footer> <!-- Footer section -->
+            <p>&copy; 2024 HTML &amp; CSS Basics Reference Guide</p> <!-- Copyright notice -->
+            <p>This comprehensive guide covers fundamental HTML elements and CSS styling techniques.</p> <!-- Footer description -->
+            <p>Created as a learning resource for web development basics.</p> <!-- Additional footer info -->
+            
+            <div style="margin-top: 20px;"> <!-- Footer links container -->
+                <a href="#headings" style="color: #bdc3c7; margin: 0 10px;">Back to Top</a> <!-- Back to top link -->
+                <span style="color: #7f8c8d;">|</span> <!-- Separator -->
+                <a href="mailto:contact@example.com" style="color: #bdc3c7; margin: 0 10px;">Contact</a> <!-- Contact link -->
+                <span style="color: #7f8c8d;">|</span> <!-- Separator -->
+                <a href="#" style="color: #bdc3c7; margin: 0 10px;">Privacy Policy</a> <!-- Privacy policy link -->
+            </div>
+        </footer>
+
+    </div> <!-- End of main container -->
+
+    <!-- JavaScript can be added here -->
+    <script> <!-- Script element for JavaScript -->
+        // This is a JavaScript comment
+        console.log('Page loaded successfully!'); // Console log message
+        
+        // Example of simple JavaScript interaction
+        document.addEventListener('DOMContentLoaded', function() { // Event listener for DOM ready
+            // Add click handlers to navigation links for smooth scrolling
+            const navLinks = document.querySelectorAll('nav a[href^="#"]'); // Select internal navigation links
+            
+            navLinks.forEach(link => { // Loop through each link
+                link.addEventListener('click', function(e) { // Add click event listener
+                    e.preventDefault(); // Prevent default link behavior
+                    const target = document.querySelector(this.getAttribute('href')); // Get target element
+                    if (target) { // Check if target exists
+                        target.scrollIntoView({ // Smooth scroll to target
+                            behavior: 'smooth', // Smooth scrolling behavior
+                            block: 'start' // Align to start of element
+                        });
+                    }
+                });
+            });
+            
+            // Example of form validation
+            const form = document.querySelector('form'); // Select the form element
+            if (form) { // Check if form exists
+                form.addEventListener('submit', function(e) { // Add submit event listener
+                    e.preventDefault(); // Prevent form submission for demo
+                    alert('Form submission prevented for demonstration purposes!'); // Show alert
+                });
+            }
+        });
+    </script>
+
+</body> <!-- End of body element -->
+</html> <!-- End of HTML document -->
